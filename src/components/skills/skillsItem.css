@@ -1,0 +1,22 @@
+.skillsItem {
+    display: flex;
+}
+
+.tick-icon {
+    margin-right: 5px;
+}
+
+.skill-name,
+.skill-level {
+    margin: 0%;
+}
+
+.skill-level {
+    font-size: 12px;
+}
+
+@media ((min-width: 320px) and (max-width: 767px)) {
+    .skill-name {
+        font-size: 16px;
+    }
+}

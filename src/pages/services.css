@@ -1,0 +1,28 @@
+.services-description-box {
+    background-color: white;
+    border: 1px solid #0000001a;
+    border-radius: 16px;
+    padding: 75px 15px 15px;
+    width: 27%;
+}
+
+.service-icon {
+    font-size: 24px;
+}
+
+.view-more {
+    margin-bottom: 0%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media ((min-width: 320px) and (max-width: 767px)) {
+    .services-description-box {
+        padding: 15px;
+        width: 45%;
+    }
+
+    .services-description-box > h3 {
+        margin: 8px 0px;
+    }
+}
