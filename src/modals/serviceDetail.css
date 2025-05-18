@@ -57,3 +57,16 @@
         width: 75%;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .service-detail-container {
+        color: rgba(255, 255, 255, 0.87);
+        background-color: #242424;
+    }
+
+    .modal-cross,
+    .service-container-description,
+    .service-description {
+        color: rgba(255, 255, 255, 0.87);
+    }
+}

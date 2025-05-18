@@ -71,3 +71,14 @@
         width: 100%;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .talk-to-me-boxes {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.87);
+    }
+
+    .contact-input {
+        border: 1px solid rgba(255, 255, 255, 0.87);
+    }
+}

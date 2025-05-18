@@ -32,3 +32,10 @@
         width: 80%;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .skills-description-box {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.87);
+    }
+}

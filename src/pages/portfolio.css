@@ -29,3 +29,10 @@
 .project-card-view {
     font-size: 12px;
 }
+
+@media (prefers-color-scheme: dark) {
+    .project-card {
+        background-color: black;
+        border: 1px solid rgba(255, 255, 255, 0.87);;
+    }
+}

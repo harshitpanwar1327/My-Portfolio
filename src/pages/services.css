@@ -26,3 +26,10 @@
         margin: 8px 0px;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .services-description-box {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.87);
+    }
+}
