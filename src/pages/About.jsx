@@ -20,7 +20,7 @@ const About = () => {
             <span className="about-body-box">
               <i className="fa-solid fa-suitcase"></i>
               <p>Completed</p>
-              <p className='about-body-value'>5+ Projects</p>
+              <p className='about-body-value'>15+ Projects</p>
             </span>
             <span className="about-body-box">
               <i className="fa-solid fa-headset"></i>
