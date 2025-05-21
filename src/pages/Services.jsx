@@ -15,7 +15,7 @@ const Services = () => {
     <div className='page'>
       <div className="page-content">
         <h2 className="page-heading">Services</h2>
-        <p className="page-subheading">What i offer</p>
+        <p className="page-subheading">What I offer</p>
         <div className="about-page-content">
           <div className="services-description-box">
             <i className="fa-solid fa-globe service-icon"></i>

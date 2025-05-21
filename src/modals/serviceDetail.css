@@ -30,6 +30,10 @@
     cursor: pointer;
 }
 
+.service-detail-heading {
+    margin-top: 0%;
+}
+
 .service-container-description {
     width: 80%;
     margin: 0%;

@@ -39,7 +39,7 @@ const ServiceDetail = ({setOpenModal, serviceName}) => {
     <div className='overlay' onClick={()=>setOpenModal(false)}>
         <div className="service-detail-container" onClick={(e)=>e.stopPropagation()}>
             <i className="fa-solid fa-xmark modal-cross" onClick={()=>setOpenModal(false)}></i>
-            <h3>{ServiceDetails[serviceName].heading}</h3>
+            <h3 className='service-detail-heading'>{ServiceDetails[serviceName].heading}</h3>
             <p className="service-container-description">Services with more than 1 year of experiance. Providing quality work to clients and companies.</p>
             <ul className='service-description'>
                 {ServiceDetails[serviceName].description.map((data, index) => (

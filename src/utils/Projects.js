@@ -13,8 +13,8 @@ export const projectsList = [
         image1: Different1,
         image2: Different2,
         image3: Different3,
-        name: "DIFꟻERENT Portal",
-        category: "WEb Application",
+        name: "DIFFERENT Portal",
+        category: "Web Application",
         link: "https://github.com/harshitpanwar1327/Different-Portal"
     },
     {
