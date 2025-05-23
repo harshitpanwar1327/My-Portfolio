@@ -1,3 +1,6 @@
+import DailySpend1 from '../assets/portfolio/DailySpend1.png'
+import DailySpend2 from '../assets/portfolio/DailySpend2.png'
+import DailySpend3 from '../assets/portfolio/DailySpend3.png'
 import Different1 from '../assets/portfolio/Different1.png'
 import Different2 from '../assets/portfolio/Different2.png'
 import Different3 from '../assets/portfolio/Different3.png'
@@ -10,10 +13,18 @@ import VideoQRWeb3 from '../assets/portfolio/VideoQRWeb3.png'
 
 export const projectsList = [
     {
+        image1: DailySpend1,
+        image2: DailySpend2,
+        image3: DailySpend3,
+        name: "Daily Spend",
+        category: "Website",
+        link: "https://harshitpanwar1327.github.io/Daily-Spend"
+    },
+    {
         image1: Different1,
         image2: Different2,
         image3: Different3,
-        name: "DIFFERENT Portal",
+        name: "DIFFERENT",
         category: "Web Application",
         link: "https://github.com/harshitpanwar1327/Different-Portal"
     },
@@ -21,7 +32,7 @@ export const projectsList = [
         image1: DBSPortal1,
         image2: DBSPortal2,
         image3: DBSPortal3,
-        name: "Data Block Solution Portal",
+        name: "Data Block Solution",
         category: "Web Application",
         link: "https://github.com/harshitpanwar1327/Data-Block-Solution-Portal"
     },
