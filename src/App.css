@@ -21,6 +21,12 @@
 }
 
 @media ((min-width: 320px) and (max-width: 767px)) {
+    .page {
+        height: auto;
+        padding: 10vh 0;
+        overflow: hidden;
+    }
+
     .page-content {
         width: 95%;
     }

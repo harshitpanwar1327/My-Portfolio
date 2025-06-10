@@ -33,10 +33,6 @@
 }
 
 @media ((min-width: 320px) and (max-width: 767px)) {
-    .navigation-bar {
-        background-color: #fafafa;
-    }
-
     .navigation-items {
         display: none;
     }
