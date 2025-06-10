@@ -2,35 +2,76 @@ import React from 'react'
 import './about.css'
 import Profile from '../assets/profileImg.png'
 import CV from '../assets/about/Harshit_Panwar_Resume.pdf'
+import {motion} from 'motion/react'
 
 const About = () => {
   return (
     <div  className='page'>
       <div className="page-content">
-        <h2 className='page-heading'>About Me</h2>
-        <p className='page-subheading'>My introduction</p>
+        <motion.h2 className='page-heading'
+          initial={{opacity: 0, y: 100}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{type: 'spring', stiffness: 100, damping: 12, delay: 0.4}}
+        >
+          About Me
+        </motion.h2>
+        <motion.p className='page-subheading'
+          initial={{opacity: 0, y: 100}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{type: 'spring', stiffness: 100, damping: 12, delay: 0.6}}
+        >
+          My introduction
+        </motion.p>
         <div className="about-page-content">
-          <img src={Profile} alt="Profile Img" className='aboutProfileImg'/>
+          <motion.img src={Profile} alt="Profile Img" className='aboutProfileImg'
+            initial={{opacity: 0, scale: 0}}
+            whileInView={{opacity: 1, scale: 1}}
+            transition={{type: 'spring', stiffness: 100, damping: 10, delay: 0.8}}
+          />
           <div className="about-page-body">
-            <span className="about-body-box">
+            <motion.span className="about-body-box"
+              initial={{opacity: 0, x: 100}}
+              whileInView={{opacity: 1, x: 0}}
+              transition={{type: 'spring', stiffness: 100, damping: 12, delay: 0.6}}
+            >
               <i className="fa-solid fa-medal"></i>
               <p>Experience</p>
               <p className='about-body-value'>1+ Years</p>
-            </span>
-            <span className="about-body-box">
+            </motion.span>
+            <motion.span className="about-body-box"
+              initial={{opacity: 0, x: 100}}
+              whileInView={{opacity: 1, x: 0}}
+              transition={{type: 'spring', stiffness: 100, damping: 12, delay: 0.8}}
+            >
               <i className="fa-solid fa-suitcase"></i>
               <p>Completed</p>
               <p className='about-body-value'>15+ Projects</p>
-            </span>
-            <span className="about-body-box">
+            </motion.span>
+            <motion.span className="about-body-box"
+              initial={{opacity: 0, x: 100}}
+              whileInView={{opacity: 1, x: 0}}
+              transition={{type: 'spring', stiffness: 100, damping: 12, delay: 1}}
+            >
               <i className="fa-solid fa-headset"></i>
               <p>Support</p>
               <p className='about-body-value'>Online 24/7</p>
-            </span>
+            </motion.span>
 
-            <p className='about-page-para'>Web developer, I create web pages with UI/UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
+            <motion.p className='about-page-para'
+             initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{type: 'spring', stiffness: 100, damping: 12, delay: 1}}
+            >
+              Web developer, I create web pages with UI/UX user interface, I have years of experience and many clients are happy with the projects carried out.
+            </motion.p>
 
-            <a download='' href={CV}><button className="hello-button">Download CV <i className="fa-regular fa-file-lines"></i></button></a>
+            <motion.a download='' href={CV}
+              initial={{opacity: 0, y: 100}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{type: 'spring', stiffness: 100, damping: 12, delay: 1.2}}
+            >
+              <button className="hello-button">Download CV <i className="fa-regular fa-file-lines"></i></button>
+            </motion.a>
           </div>
         </div>
       </div>

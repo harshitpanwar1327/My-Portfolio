@@ -6,13 +6,26 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import { projectsList } from '../utils/Projects'
 import { Pagination } from 'swiper/modules'
+import {motion} from 'motion/react'
 
 const Portfolio = () => {
   return (
     <div className='page'>
       <div className="page-content">
-        <h2 className="page-heading">Portfolio</h2>
-        <p className="page-subheading">Most recent work</p>
+        <motion.h2 className="page-heading"
+          initial={{opacity: 0, y: 100}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{type: 'spring', stiffness: 100, damping: 12, delay: 0.4}}
+        >
+          Portfolio
+        </motion.h2>
+        <motion.p className="page-subheading"
+          initial={{opacity: 0, y: 100}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{type: 'spring', stiffness: 100, damping: 12, delay: 0.6}}
+        >
+          Most recent work
+        </motion.p>
         <Swiper className='swiperContainer'
           slidesPerView={1}
           spaceBetween={10}

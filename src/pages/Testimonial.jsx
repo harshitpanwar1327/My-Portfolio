@@ -10,6 +10,7 @@ import Client3 from '../assets/testimonial/client3.png'
 import Client4 from '../assets/testimonial/client4.png'
 import Client5 from '../assets/testimonial/client5.png'
 import Client6 from '../assets/testimonial/client6.png'
+import {motion} from 'motion/react'
 
 const Testimonial = () => {
   let clients = [
@@ -48,8 +49,20 @@ const Testimonial = () => {
   return (
     <div className="page">
       <div className='page-content'>
-        <h2 className="page-heading">Testimonial</h2>
-        <p className="page-subheading">My client saying</p>
+        <motion.h2 className="page-heading"
+          initial={{opacity: 0, y: 100}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{type: 'spring', stiffness: 100, damping: 12, delay: 0.4}}
+        >
+          Testimonial
+        </motion.h2>
+        <motion.p className="page-subheading"
+          initial={{opacity: 0, y: 100}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{type: 'spring', stiffness: 100, damping: 12, delay: 0.6}}
+        >
+          My client saying
+        </motion.p>
         <Swiper className='swiperContainer'
           slidesPerView={1}
           spaceBetween={12}

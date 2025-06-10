@@ -18,7 +18,7 @@ export const projectsList = [
         image3: DailySpend3,
         name: "Daily Spend",
         category: "Website",
-        link: "https://harshitpanwar1327.github.io/Daily-Spend"
+        link: "https://harshitpanwar1327.github.io/Daily-Spend-Website"
     },
     {
         image1: Different1,
