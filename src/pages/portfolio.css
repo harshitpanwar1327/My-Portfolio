@@ -1,0 +1,37 @@
+.swiperContainer {
+    padding-right: 1rem !important;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #0000001a;
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+
+.project-card-video,
+.project-card-name,
+.project-card-category,
+.project-card-view {
+    margin: 10px;
+}
+
+.project-card-video {
+    border-radius: 16px;
+    width: calc(100% - 20px);
+}
+
+.project-card-category {
+    font-size: 14px;
+}
+
+.project-card-view {
+    font-size: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .project-card {
+        background-color: black;
+    }
+}

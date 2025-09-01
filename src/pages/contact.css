@@ -1,0 +1,84 @@
+.talk-to-me,
+.write-your-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talk-to-me {
+    width: 35%;
+}
+
+.write-your-project {
+    width: 55%;
+}
+
+.contact-subheading {
+    margin-top: 0%;
+}
+
+.contact-input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #0000005a;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background: transparent;
+}
+
+.talk-to-me-boxes {
+    background-color: white;
+    border: 1px solid #0000001a;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talk-to-me-icons {
+    font-size: 24px;
+}
+
+.talk-to-me-heading {
+    margin: 4px 0px;
+}
+
+.talk-to-me-detail {
+    margin: 4px 0%;
+    font-size: 12px;
+    color: #0000009f;
+}
+
+@media ((min-width: 768px) and (max-width: 1023px)) {
+    .talk-to-me {
+        width: 45%;
+    }
+
+    .write-your-project {
+        width: 70%;
+    }
+}
+
+@media ((min-width: 320px) and (max-width: 767px)) {
+    .talk-to-me {
+        width: 65%;
+    }
+
+    .write-your-project {
+        width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .talk-to-me-boxes {
+        color: black;
+        background-color: rgba(255, 255, 255, 0.87);
+    }
+
+    .contact-input {
+        border: 1px solid rgba(255, 255, 255, 0.87);
+    }
+}

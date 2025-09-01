@@ -1,0 +1,88 @@
+.about-page-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.aboutProfileImg {
+    height: 250px;
+    border-radius: 16px;
+}
+
+.about-page-body {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.about-body-box {
+    background-color: white;
+    border: 1px solid #0000001a;
+    border-radius: 16px;
+    padding: 10px 15px;
+    text-align: center;
+    width: 20%;
+}
+
+.about-body-box > p {
+    margin: 0%;
+}
+
+.about-body-value {
+    font-size: 12px;
+}
+
+.about-page-para {
+    text-align: justify;
+}
+
+@media ((min-width: 768px) and (max-width: 1023px)) {
+    .about-page-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .about-page-body {
+        width: 75%;
+    }
+
+    .about-body-box {
+        width: 23%;
+    }
+
+    .about-page-body > p {
+        text-align: justify;
+    }
+}
+
+@media ((min-width: 320px) and (max-width: 767px)) {
+    .about-page-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .aboutProfileImg {
+        height: 200px;
+    }
+
+    .about-page-body {
+        width: 100%;
+    }
+
+    .about-body-box {
+        width: 25%;
+    }
+
+    .about-body-support-box {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .about-body-box {
+        background-color: rgba(255, 255, 255, 0.87);
+        color: black;
+    }
+}

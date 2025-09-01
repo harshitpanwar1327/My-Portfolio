@@ -1,0 +1,76 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000002f;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-detail-container {
+    color: black;
+    background-color: #fafafa;
+    border: 1px solid #0000001a;
+    border-radius: 16px;
+    padding: 15px 20px;
+    width: 35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-cross {
+    color: #0000007f;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.service-detail-heading {
+    margin-top: 0%;
+}
+
+.service-container-description {
+    width: 80%;
+    margin: 0%;
+    color: #0000007f;
+    font-size: 14px;
+}
+
+.service-description {
+    align-self: flex-start;
+    text-align: start;
+    list-style: none;
+    padding: 0%;
+    color: #0000007f;
+    font-size: 14px;
+}
+
+@media ((min-width: 768px) and (max-width: 1023px)) {
+    .service-detail-container {
+        width: 45%;
+    }
+}
+
+@media ((min-width: 320px) and (max-width: 767px)) {
+    .service-detail-container {
+        width: 75%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .service-detail-container {
+        color: rgba(255, 255, 255, 0.87);
+        background-color: #242424;
+    }
+
+    .modal-cross,
+    .service-container-description,
+    .service-description {
+        color: rgba(255, 255, 255, 0.87);
+    }
+}

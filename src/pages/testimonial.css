@@ -1,0 +1,28 @@
+.client-review-card {
+    background-color: white;
+    border: 1px solid #0000001a;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+}
+
+.client-img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin: 1rem 0 0 1rem;
+}
+
+.client-name,
+.review-paragraph {
+    font-size: 14px;
+    width: 85%;
+    margin: 1rem auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    .client-review-card {
+        background-color: black;
+        color: rgba(255, 255, 255, 0.87);
+    }
+}
