@@ -1,6 +1,6 @@
-import RealEstate from '../assets/portfolio/RealEstate.mp4'
-import DBS from '../assets/portfolio/DBS.mp4'
-import DailySpend from '../assets/portfolio/DailySpend.mp4'
+import RealEstate from '../assets/portfolio/RealEstate.mov'
+import DBS from '../assets/portfolio/DBS.mov'
+import DailySpend from '../assets/portfolio/DailySpend.mov'
 
 export const projectsList = [
     {
